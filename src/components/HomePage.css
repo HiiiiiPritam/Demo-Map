@@ -1,0 +1,75 @@
+/* General page styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section styles */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 16px;
+  color: white;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 48px;
+  height: 48px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.weather-alert {
+  background-color: #ffc107;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Main section styles */
+.main-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.menu-item {
+  background: linear-gradient(45deg, #6a5acd, #483d8b);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
